@@ -43,12 +43,20 @@ btn.addEventListener("click",()=>{
 function takeCommand(message){
    voice.style.display="none"
     btn.style.display="flex"
-    if(message.includes("hello shifra")||message.includes("hey shifra")||message.includes("hi shifra")){
+    if(message.includes("hello jarvis")||message.includes("hey")||message.includes("hi")){
         speak("hello Krishna sir,how can i assist you today?")
     }
-    else if(message.includes("who are you")||message.includes("what is your name")||message.includes("what about you")){
-        speak("i am Shifra virtual assistant , developed by Krishna Sir")
-    }else if(message.includes("open youtube")){
+    else if(message.includes("who are you")){
+        speak("i am jarvis virtual assistant , developed by Krishna Sir")
+
+    }
+    else if(message.includes("what is your name")){
+        speak("my name is jarvis..")
+    }    
+    else if(message.includes(" jarvis who created you")||message.includes("jarvis who developed you")||message.includes("jarvis who invented you")){
+        speak("my honorable Krishna Sir Developed Me..")
+    }    
+    else if(message.includes("open youtube")){
         speak("opening youtube...")
         window.open("https://youtube.com/","_blank")
     }
