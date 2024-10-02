@@ -4,7 +4,7 @@ let voice=document.querySelector("#voice")
 
 function speak(text){
     let text_speak=new SpeechSynthesisUtterance(text)
-    text_speak.rate=2
+    text_speak.rate=0.8
     text_speak.pitch=0.9
     text_speak.volume=1
     text_speak.lang="en-US"
