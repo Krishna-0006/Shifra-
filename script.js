@@ -43,15 +43,15 @@ btn.addEventListener("click",()=>{
 function takeCommand(message){
    voice.style.display="none"
     btn.style.display="flex"
-    if(message.includes("hello Kelly")||message.includes("hey")||message.includes("hi")){
-        speak("hello sir,how can i assist you today?")
+    if(message.includes("hello")||message.includes("hey")||message.includes("hi")){
+        speak("hello sir, how can i assist you today?")
     }
     else if(message.includes("who are you")){
-        speak("i am Kelly virtual assistant , developed by Krishna Sir")
+        speak("i am Kelly , a virtual assistant , developed by Krishna Sir")
 
     }
     else if(message.includes("what about you")){
-        speak("i am Kelly ,developed by Krishna Singh , specially designed to perform any task that you wish..")
+        speak("i am Kelly ,developed by Krishna Singh , speciallydesigned ..to perform any task that you wish..")
 
     }
     else if(message.includes("tell me animals name")){
@@ -61,7 +61,7 @@ function takeCommand(message){
     else if(message.includes("what is your name")){
         speak("my name is Kelly..")
     }    
-    else if(message.includes(" Kelly who created you")||message.includes("Kelly who developed you")||message.includes("Kelly who invented you")){
+    else if(message.includes(" kelly who created you")||message.includes("kelly who developed you")||message.includes("kelly who invented you")){
         speak("my honorable Krishna Sir Developed Me..")
     }    
     else if(message.includes("open youtube")){
@@ -106,7 +106,7 @@ function takeCommand(message){
     }
     else if(message.includes("open amazon")){
         speak("opening amazon..")
-        window.open("amazon://")
+        window.open("https://amazon.com/","_blank")
     }    
     else if(message.includes("time")){
       let time=new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"})
