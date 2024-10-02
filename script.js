@@ -7,7 +7,7 @@ function speak(text){
     text_speak.rate=0.8
     text_speak.pitch=0.9
     text_speak.volume=1
-    text_speak.lang="en-US"
+    text_speak.lang="en-GB"
     window.speechSynthesis.speak(text_speak)
 }
 
@@ -107,7 +107,7 @@ function takeCommand(message){
     else if(message.includes("open amazon")){
         speak("opening amazon..")
         window.open("amazon://")
-        }    
+    }    
     else if(message.includes("time")){
       let time=new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"})
       speak(time)
@@ -115,7 +115,7 @@ function takeCommand(message){
     else if(message.includes("date")){
         let date=new Date().toLocaleString(undefined,{day:"numeric",month:"short"})
         speak(date)
-      }
+    }
     else{
         let finalText="this is what i found on internet regarding" + message.replace("shipra","") || message.replace("shifra","")
         speak(finalText)
