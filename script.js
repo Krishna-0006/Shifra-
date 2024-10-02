@@ -55,7 +55,7 @@ function takeCommand(message){
 
     }
     else if(message.includes("tell me animals name")){
-        speak("Here are animals name: Tiger ,Lion ,Cow, Rabbit ,Dog ,Cat )
+        speak("Here are animals name: Tiger ,Lion ,Cow, Rabbit ,Dog ,Cat")
 
     }    
     else if(message.includes("what is your name")){
