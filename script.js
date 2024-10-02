@@ -92,10 +92,14 @@ function takeCommand(message){
         speak("opening snapchat..")
         window.open("snapchat://")
     }
-    else if(message.includes("open ")){
-        speak("opening clock..")
-        window.open("clock://")
+    else if(message.includes("open flipkart")){
+        speak("opening flipkart..")
+        window.open("flipkart://")
     }
+    else if(message.includes("open amazon")){
+        speak("opening amazon..")
+        window.open("amazon://")
+        }    
     else if(message.includes("time")){
       let time=new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"})
       speak(time)
