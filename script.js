@@ -43,17 +43,17 @@ btn.addEventListener("click",()=>{
 function takeCommand(message){
    voice.style.display="none"
     btn.style.display="flex"
-    if(message.includes("hello jarvis")||message.includes("hey")||message.includes("hi")){
-        speak("hello Krishna sir,how can i assist you today?")
+    if(message.includes("hello Kelly")||message.includes("hey")||message.includes("hi")){
+        speak("hello sir,how can i assist you today?")
     }
     else if(message.includes("who are you")){
-        speak("i am jarvis virtual assistant , developed by Krishna Sir")
+        speak("i am Kelly virtual assistant , developed by Krishna Sir")
 
     }
     else if(message.includes("what is your name")){
-        speak("my name is jarvis..")
+        speak("my name is Kelly..")
     }    
-    else if(message.includes(" jarvis who created you")||message.includes("jarvis who developed you")||message.includes("jarvis who invented you")){
+    else if(message.includes(" Kelly who created you")||message.includes("Kelly who developed you")||message.includes("Kelly who invented you")){
         speak("my honorable Krishna Sir Developed Me..")
     }    
     else if(message.includes("open youtube")){
@@ -92,7 +92,7 @@ function takeCommand(message){
         speak("opening snapchat..")
         window.open("snapchat://")
     }
-    else if(message.includes("open clock")){
+    else if(message.includes("open ")){
         speak("opening clock..")
         window.open("clock://")
     }
