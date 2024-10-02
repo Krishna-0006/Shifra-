@@ -11,6 +11,7 @@ function speak(text){
     if selectedVoice = voice.find(voice => voice.name === "Daniel");
     if (selectedVoice) {
      text_speak.voice = selectedVoice;}
+    {
     window.speechSynthesis.speak(text_speak)
 }
 
