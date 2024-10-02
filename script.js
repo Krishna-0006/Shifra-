@@ -7,7 +7,10 @@ function speak(text){
     text_speak.rate=1
     text_speak.pitch=1
     text_speak.volume=1
-    text_speak.lang="hi-GB"
+    text_speak.lang="en-US"
+    if selectedVoice = voice.find(voice => voice.name === "Daniel");
+    if (selectedVoice) {
+     text_speak.voice = selectedVoice;}
     window.speechSynthesis.speak(text_speak)
 }
 
@@ -23,9 +26,9 @@ function wishMe(){
         speak("Good Evening Sir")
     }
 }
-// window.addEventListener('load',()=>{
-//     wishMe()
-// })
+ window.addEventListener('load',()=>{
+     wishMe()
+ })
 let speechRecognition= window.SpeechRecognition || window.webkitSpeechRecognition 
 let recognition =new speechRecognition()
 recognition.onresult=(event)=>{
